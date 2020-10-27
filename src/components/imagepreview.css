@@ -1,0 +1,14 @@
+.imagecontainer {
+  margin: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.imageThumb {
+  width: 40%;
+  margin: 0;
+}
+
+.imageauthor {
+  margin: 5px;
+}
