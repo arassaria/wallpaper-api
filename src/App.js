@@ -16,7 +16,7 @@ function App() {
       {randomImage && (
         <ImagePreview
           src={randomImage.urls.regular}
-          alt={randomImage.urls.description}
+          alt={randomImage.alt_description}
           author={randomImage.user.name}
         />
       )}
