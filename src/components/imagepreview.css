@@ -1,11 +1,16 @@
 .imagecontainer {
-  margin: 20px;
+  margin: auto;
+  width: 40%;
   display: grid;
   place-items: center;
+  border: 2px solid black;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
 }
 
 .imageThumb {
-  width: 40%;
+  width: 100%;
   margin: 0;
 }
 
