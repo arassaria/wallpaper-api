@@ -15,7 +15,9 @@ function App() {
 
   return (
     <main>
-      <button onClick={() => handleClick()}>Get Random Image</button>
+      <button className="button" onClick={() => handleClick()}>
+        Get Random Image
+      </button>
       {randomImage && (
         <ImagePreview
           src={randomImage.urls.regular}
