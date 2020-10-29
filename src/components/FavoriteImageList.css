@@ -1,0 +1,15 @@
+.favorite-ul {
+  display: flex;
+  margin-left: 0px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.favorite-li {
+  list-style-type: none;
+  margin-left: 5px;
+}
+
+.favorite-ul > :first-child {
+  margin-left: 0px;
+}

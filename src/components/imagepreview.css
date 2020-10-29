@@ -1,5 +1,5 @@
 .imagecontainer {
-  margin: auto;
+  margin: 1rem auto;
   width: 40%;
   display: grid;
   place-items: center;
