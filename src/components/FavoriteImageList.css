@@ -1,8 +1,10 @@
 .favorite-ul {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 0px;
   margin-top: 20px;
   align-items: center;
+  max-width: 1000px;
 }
 
 .favorite-li {
