@@ -3,9 +3,10 @@ import ImagePreview from "./components/ImagePreview";
 import { useState } from "react";
 import { getRandomImage } from "./api/getRandomImage";
 import FavoriteImageList from "./components/FavoriteImageList";
+import { getFavorites } from "./api/storage";
 
 function App() {
-  const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+  let favorites = getFavorites();
   const [randomImage, setRandomImage] = useState(null);
   async function handleClick() {
     const randomImageResponse = await getRandomImage();

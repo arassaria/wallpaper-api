@@ -1,6 +1,8 @@
 main {
   display: grid;
   place-items: center;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
 
 .favorite-image {
