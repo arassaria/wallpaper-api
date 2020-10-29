@@ -14,6 +14,7 @@ function App() {
 
   return (
     <main>
+      <h1 className="heading">Wallpaper Api</h1>
       <button className="button" onClick={() => handleClick()}>
         Get Random Image
       </button>
