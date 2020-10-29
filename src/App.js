@@ -6,7 +6,6 @@ import FavoriteImageList from "./components/FavoriteImageList";
 
 function App() {
   const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
-  console.log(favorites);
   const [randomImage, setRandomImage] = useState(null);
   async function handleClick() {
     const randomImageResponse = await getRandomImage();
