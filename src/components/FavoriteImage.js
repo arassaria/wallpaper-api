@@ -19,7 +19,7 @@ export default function FavoriteImage({ photoId }) {
         }}
         className="favorites__icon-button"
       >
-        🗑
+        ❤️
       </IconButton>
     </div>
   );

@@ -23,7 +23,7 @@ export default function ImagePreview({ src, alt, author, id }) {
           localStorage.setItem("favorites", JSON.stringify(newFavorites));
         }}
       >
-        ❤️
+        🤍
       </IconButton>
       <img className="imageThumb" src={src} alt={alt} />
       <p className="imageAuthor">Author: {author}</p>
