@@ -1,6 +1,7 @@
 import React from "react";
 import IconButton from "./IconButton";
 import "./FavoriteImageList.css";
+import { without } from "../api/arrays";
 
 export default function FavoriteImage({ photoId }) {
   let currentFavorites = JSON.parse(localStorage.getItem("favorites") || "[]");
@@ -13,9 +14,7 @@ export default function FavoriteImage({ photoId }) {
       />
       <IconButton
         onClick={() => {
-          currentFavorites = currentFavorites.filter(
-            (favorite) => favorite !== photoId
-          );
+          currentFavorites = without(currentFavorites, photoId);
           localStorage.setItem("favorites", JSON.stringify(currentFavorites));
         }}
         className="favorites__icon-button"
