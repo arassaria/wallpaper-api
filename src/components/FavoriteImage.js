@@ -1,11 +1,27 @@
 import React from "react";
+import IconButton from "./IconButton";
+import "./FavoriteImageList.css";
+import { without } from "../api/arrays";
+import { getFavorites } from "../api/storage";
 
 export default function FavoriteImage({ photoId }) {
+  let currentFavorites = getFavorites();
   return (
-    <img
-      src={`https://source.unsplash.com/${photoId}`}
-      alt="Favorite"
-      className="favorite-image"
-    />
+    <div>
+      <img
+        src={`https://source.unsplash.com/${photoId}`}
+        alt="Favorite"
+        className="favorite-image"
+      />
+      <IconButton
+        onClick={() => {
+          currentFavorites = without(currentFavorites, photoId);
+          localStorage.setItem("favorites", JSON.stringify(currentFavorites));
+        }}
+        className="favorites__icon-button"
+      >
+        ❤️
+      </IconButton>
+    </div>
   );
 }

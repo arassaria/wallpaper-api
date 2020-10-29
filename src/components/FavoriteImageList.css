@@ -1,0 +1,33 @@
+.favorite-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: center;
+  max-width: 1000px;
+  padding: 0;
+  justify-content: center;
+}
+
+.favorite-li {
+  list-style-type: none;
+  width: 15%;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: limegreen;
+  position: relative;
+  text-align: center;
+}
+
+.favorite-ul > :first-child {
+  margin-left: 0px;
+}
+
+.favorites__icon-button {
+  background: none;
+  border: none;
+  position: relative;
+}
