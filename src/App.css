@@ -2,3 +2,7 @@ main {
   display: grid;
   place-items: center;
 }
+
+.favorite-image {
+  width: 100px;
+}
