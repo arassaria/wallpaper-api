@@ -2,9 +2,10 @@ import React from "react";
 import IconButton from "./IconButton";
 import "./FavoriteImageList.css";
 import { without } from "../api/arrays";
+import { getFavorites } from "../api/storage";
 
 export default function FavoriteImage({ photoId }) {
-  let currentFavorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+  let currentFavorites = getFavorites();
   return (
     <div>
       <img

@@ -8,7 +8,7 @@ export default function ImagePreview({ src, alt, author, id }) {
     <div className="imagecontainer">
       <IconButton
         onClick={() => {
-          const favorites = getFavorites;
+          const favorites = getFavorites();
           if (favorites.includes(id)) {
             // Already added to favorites
             return;
